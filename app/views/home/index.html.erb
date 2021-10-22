@@ -1,7 +1,7 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
 
 <hr>
 
-<h2><%= current_user.role %> : <%= current_user.first_name %> </h2>
-
+<% if user_signed_in? %>
+  <h2><%= current_user.role %> : <%= current_user.first_name %> </h2>
+<% end %>
