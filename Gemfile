@@ -63,7 +63,8 @@ gem 'devise'
 
 gem 'rails_admin', '~> 2.0'
 
-
+# Restrict access
+gem 'cancancan'
 
 
 

@@ -1,0 +1,28 @@
+<h1>Invite Member</h1>
+
+<%= form_with(model: @user) do |f| %>
+  <div class="form-signin mt-4">
+
+    <div class="field">
+      <%= f.label :first_name %><br />
+      <%= f.text_field :first_name%>
+    </div>
+
+    <div class="field">
+      <%= f.label :last_name %><br />
+      <%= f.text_field :last_name%>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="actions"><br />
+      <%#= f.submit "Invite", method: :patch  %>
+      <%= link_to "Invite", invite_path, method: :post %>
+    </div>
+
+  </div>
+
+<% end %>
