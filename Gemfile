@@ -58,5 +58,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Securely configure
 gem 'figaro'  
 
+# User Authentication
+gem 'devise'
 
 
