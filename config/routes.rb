@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  get 'users/index'
+
   # devise_for :users, controllers: {
 	#   #  sessions: 'users/sessions',
 	#   #  passwords: 'users/passwords',
@@ -8,5 +11,5 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  root 'home#index'
+  root 'users#index'
 end

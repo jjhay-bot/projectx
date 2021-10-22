@@ -61,4 +61,9 @@ gem 'figaro'
 # User Authentication
 gem 'devise'
 
+gem 'rails_admin', '~> 2.0'
+
+
+
+
 
